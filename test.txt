@@ -1,0 +1,16 @@
+The algorithm for expected return:
+1. the immediate cost is based on the action at the start of the ay a_t * cost
+2. calculate casrs at the start of the day at each locations
+3. 
+    - For each possible of realization of renting amount:
+        - calculate the probability of renting x given lambda
+        - calculate the amount that can be rented
+        - calculate the rweard after renting
+        - calculate how many cars are left
+        - initialize expected value
+        - for each realization of return amount:
+            -calculate probability of return x given lambda
+            - how many cars after return
+            - calculate joint probability of return = x and renting = y
+            - calculate expected value of next state
+        - returns = probability of renting*(immediate reward + 0.9*expected value)
