@@ -2,17 +2,7 @@ import numpy as np
 from scipy.stats import poisson
 
 class JCR:
-    # initialize the class with parameters
-    # cost, reward, lambda_req1, lambda_req2, max_cars_each, lambda_ret1, lambda_ret2, theta, gamma
-    # cost: cost of moving cars
-    # reward: reward for renting cars
-    # lambda_req1: demand for location 1
-    # lambda_req2: demand for location 2
-    # max_cars_each: maximum number of cars in each location
-    # lambda_ret1: return rate for location 1
-    # lambda_ret2: return rate for location 2
-    # theta: threshold for convergence
-    # gamma: discount factor
+
     def __init__(self, cost=2, reward=10, lambda_req1=3, lambda_req2=4, max_cars_each=20, lambda_ret1=3, lambda_ret2=2, theta=1e-6, gamma=0.9):
         self.lambda_req1 = lambda_req1
         self.lambda_req2 = lambda_req2

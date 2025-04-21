@@ -1,8 +1,13 @@
-import numpy as np
-states = []
-for i in range(20 + 1):
-    for j in range(20 + 1):
-        states.append([i, j])
-print(states)
+g = 0
+rewards = []
+r = 1
 
+for i in range(10):
+    g+= r
+    print(g)
+    rewards.append(g)
 
+print(rewards)
+
+print(sum(rewards))
+print(sum(rewards)/len(rewards))
